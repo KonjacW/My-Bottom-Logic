@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Wang Konjac, 1, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.40.0.3
+Toolchain Path:  D:\software\veil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.18.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\code\stm32\project\lanqiao\helloworld\MDK-ARM\helloworld.uvprojx
+Project File Date:  02/17/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\software\veil\ARM\ARMCC\Bin'
+Build target 'helloworld'
+compiling main.c...
+./myfunc/led.h(5): warning:  #1295-D: Deprecated declaration LED_clear - give arg types
+  void LED_clear();
+./myfunc/interrupt.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(141): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  				LCD_DisplayStringLine(
+ine3,buffer);
+../Core/Src/main.c(105): warning:  #177-D: variable "cnt"  was declared but never referenced
+  	int last = -1 , now , cnt , glaf = 0;
+../Core/Src/main.c(105): warning:  #177-D: variable "glaf"  was declared but never referenced
+  	int last = -1 , now , cnt , glaf = 0;
+../Core/Src/main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=8102 RO-data=5082 RW-data=24 ZI-data=1856  
+FromELF: creating hex file...
+"helloworld\helloworld.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32G4xx_DFP.2.2.0.pack
+                Keil::STM32G4xx_DFP@2.2.0
+                STMicroelectronics STM32G4 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_helloworld
+  D:/software/veil/ARM/PACK/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
